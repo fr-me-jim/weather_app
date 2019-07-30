@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from './components/Header';
 
 function App() {
   return (
-    <h1>First content</h1>
+    <div className="App">
+      <Header 
+        title="React Wheather App"
+      />
+    </div>
   );
 }
 
