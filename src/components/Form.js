@@ -1,13 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Form = () => {
+const Form = ({dataQuery}) => {
+
+    //component's state
+    //search = state, saveState = this.setState({})
+    const [search, setSearch] = useState({
+        city : '',
+        country : ''
+    })
 
     const handleChange = e => {
         //change state
+        setSearch({
+            ...search,
+            [e.target.name] : e.target.value
+        })
+    }
+
+    const handleSubmit = e =>{
+        //get wheather
+        e.preventDefault();
+
+        //send query data to main component
+        dataQuery(search);
     }
 
     return ( 
-        <form>
+        <form
+            onSubmit={handleSubmit}
+        >
             <div className="input-field col s12">
                 <input 
                     type="text"
