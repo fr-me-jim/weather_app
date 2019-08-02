@@ -52,7 +52,7 @@ const Form = ({dataQuery}) => {
 
             <div className="input-field col s12">
                 <input type="submit" className="waves-effect waves-light btn-large 
-                    btn-block yellow accent-44" value="Search Wheather" />
+                    btn-block yellow accent-4" value="Search Wheather" />
             </div>
         </form>
     );
