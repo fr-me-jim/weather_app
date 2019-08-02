@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Wheather APP with React Hooks
+# Weather APP with React Hooks
 
 ## Description
 
