@@ -34,6 +34,10 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   color: white;
 }
 
+button {
+  width: 100%;
+}
+
 .container-form {
   padding: 3rem 0 1px 0;
   background-color: #03a9f4;
