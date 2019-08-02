@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import Error from './components/Error';
-import Wheather from './components/Wheather';
+import Weather from './components/Weather';
 
 function App() {
 
@@ -57,8 +57,8 @@ function App() {
     component = <Error message="This city does not exist in our resgistry." />
 
   }  else {
-    //show wheather
-    component = <Wheather 
+    //show Weather
+    component = <Weather 
                   result={result}
                 />;
   }
@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="App">
       <Header 
-        title="React Wheather App"
+        title="React Weather App"
       />
 
       <div className="container-form">
