@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import Error from './components/Error';
-import { async } from 'q';
+import Wheather from './components/Wheather';
 
 function App() {
 
@@ -53,9 +53,14 @@ function App() {
     //there is an error, show it
     component = <Error message='Both fields are mandatory!' />
 
-  }else {
+  }else if (result.cod === "404"){
+    component = <Error message="This city does not exist in our resgistry." />
+
+  }  else {
     //show wheather
-    component = null;
+    component = <Wheather 
+                  result={result}
+                />;
   }
 
   return (
